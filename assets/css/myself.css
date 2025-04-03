@@ -34,81 +34,6 @@ nav ul li a {
   font-size: 18px;
 }
 
-/* デフォルトはメニュー非表示 */
-#nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-#nav-list li {
-  display: inline;
-}
-
-#nav-list li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* ハンバーガーメニュー */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-.menu-toggle .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: white;
-  margin: 5px auto;
-  transition: 0.3s;
-}
-
-/* モバイルサイズ */
-@media (max-width: 768px) {
-  /* ナビゲーションメニューを隠す */
-  #nav-list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: dimgray;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 20px 0;
-  }
-
-  /* ハンバーガーメニューのボタンを表示 */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* メニューが表示された時 */
-  #nav-list.show {
-    display: flex;
-  }
-
-  /* メニューリンクのスタイル */
-  #nav-list li {
-    width: 100%;
-    text-align: center;
-  }
-
-  #nav-list li a {
-    padding: 10px 0;
-    display: block;
-    font-size: 18px;
-  }
-}
-
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -137,12 +62,14 @@ main {
 .skills ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .skills li {
   background: #007bff;
   color: white;
-  display: inline-block;
   padding: 8px 15px;
   margin: 5px;
   border-radius: 20px;
@@ -199,21 +126,6 @@ footer p {
   .profile img {
     width: 100px;
     height: 100px;
-  }
-
-  .skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .skills li {
-    background: #007bff;
-    color: white;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 20px;
   }
 
   .works {
