@@ -59,12 +59,17 @@
             <section class="works">
                 <h2>Works</h2>
                 <div class="work-item">
-                    <img src="assets/img/blog.png" alt="ブログサイトのトップページ画面">
-                    <p>ブログサイト</p>
+                    <a href="http://54.79.33.38/blog/" target="_blank">
+                        <img src="assets/img/blog.png" alt="ブログサイトのトップページ画面">
+                        <p>ブログサイト</p>
+                    </a>
                 </div>
                 <div class="work-item">
-                    <img src="assets/img/surfing.png" alt="サーフィンサイトのトップページ画面">
-                    <p>サーフィンサイト</p>
+                    <a href="http://3.27.17.169/surfing/" target="_blank">
+                        <img src="assets/img/surfing.png" alt="サーフィンサイトのトップページ画面">
+                        <p>サーフィンサイト</p>
+                    </a>
+                    <p><a href="https://github.com/matsuba51" target="_blank">GitHubでコードを見る</a></p>
                 </div>
             </section>
         </main>
